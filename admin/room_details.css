@@ -1,0 +1,37 @@
+table {
+  background-color: whitesmoke;
+  border-collapse: collapse;
+  width: 100%;
+ 
+}
+a{
+text-decoration: none;
+background-color: indianred;
+color: white;
+padding: 5px;
+font-size: 20px;
+ 
+
+}
+td, th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+th{
+   background-color: green;
+   color: white;
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+h1{
+  text-align: center;
+  margin-top: 120px;
+  background-color: #2CB88A;
+  margin-left: 400px;
+  margin-right: 400px;
+  padding: 10px;
+  color: white;
+  border-radius: 25px;
+}

@@ -1,0 +1,41 @@
+table, th, td {
+  border:1px solid black;
+  text-align:center;
+}
+
+td {
+  padding: 15px;
+}
+th{
+  color: white;
+  background-color: black;
+  padding: 10px;
+}
+.meal{
+  width:70%;
+  margin-right: 300px;
+  margin-left: 270px;
+  background-color: whitesmoke;
+  margin-top: 20px;
+}
+.button{
+background-color:green;
+padding: 10px;
+color: white;
+border-radius: 25px;
+}
+
+.guest_input{
+  padding:.8px;
+  width: 80px;
+}
+#clock{
+  background-color: #367FA9;
+  color: whitesmoke;
+  text-align: center;
+  font-size: 25px;
+  border-radius: 25px;
+font-size: 25px;
+margin-right: 200px;
+margin-left: 250px;
+}
