@@ -163,11 +163,17 @@ if(isset($_POST['meal_sub'])){
             $insert = new Database();
             $result = $insert->create($sql);
 
-            echo 'alert("Successfully Marked")';
+            session_start();
+    $_SESSION['success_message'] = "Order saved successfully.";
+    header("Location:../meal.php");
+    exit();
 
         }else{
 
-            echo '<script>alert("Welcome to Geeks for Geeks")</script>';
+           session_start();
+    $_SESSION['success_message'] = "Rule: Invalid ,Time is out.";
+    header("Location:../meal.php");
+    exit();
     
         }
 
@@ -182,18 +188,26 @@ if(isset($_POST['meal_sub'])){
             $delete = new Database();
             $result = $delete->delete($sql);
 
-            echo 'alert("Successfully Unmarked")';
+          session_start();
+    $_SESSION['success_message'] = "Order delete successfully .";
+    header("Location:../meal.php");
+    exit();
 
         }else{
 
-       echo '<script>alert("Welcome to Geeks for Geeks")</script>';
+       session_start();
+    $_SESSION['success_message'] = "Rule: Time over.";
+    header("Location:../meal.php");
+    exit();
     
         }
 
     }else{
 
-        echo 'alert("Rule: Can not order twice and can not delete before ordering.")';
-
+        session_start();
+    $_SESSION['success_message'] = "Rule: Can not order twice and can not delete before ordering.";
+    header("Location:../meal.php");
+    exit();
     }
 
     //echo $sql;
