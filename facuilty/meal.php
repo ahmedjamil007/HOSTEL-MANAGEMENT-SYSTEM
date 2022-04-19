@@ -97,7 +97,12 @@ margin-left: 250px;
  
 
 
-
+<?php if (isset($_SESSION['success_message']) && !empty($_SESSION['success_message'])) { ?>
+                        <div  style="margin-top: 10px;margin-left: 400px;margin-right: 400px;background-color: seagreen;font-size: 20px;color:white;padding: 10px;border-radius: 25px;box-shadow: 5px 10px limegreen;"><b><?php echo $_SESSION['success_message']; ?></b></div>
+                        <?php
+                        unset($_SESSION['success_message']);
+                    }
+                    ?>
 
     <table class="meal">
         <tr>          <th>#</th>
